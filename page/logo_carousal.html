@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes slides {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .logos {
+      overflow: hidden;
+      padding: 30px 0px;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .logos:before,
+    .logos:after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 250px;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .logos:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    }
+
+    .logos:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    }
+
+    .logo_items {
+      display: inline-block;
+      animation: 35s slides infinite linear;
+    }
+
+    .logos:hover .logo_items {
+      animation-play-state: paused;
+    }
+
+    .logo_items img {
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logos">
+    <!--Row 1-->
+    <div class="logo_items">
+      <img src="/img/Logo/logo1.jpg">
+      <img src="/img/Logo/logo2.jpg">
+      <img src="/img/Logo/logo3.png">
+      <img src="/img/Logo/logo4.jpg">
+      <img src="/img/Logo/logo5.jpg">
+      <img src="/img/Logo/logo6.jpg">
+      <img src="/img/Logo/logo7.png">
+      <img src="/img/Logo/logo8.jpg">
+      <img src="/img/Logo/logo9.jpg">
+      <img src="/img/Logo/logo10.png">
+      <img src="/img/Logo/logo11.png">
+      <img src="/img/Logo/logo12.jpg">
+      <img src="/img/Logo/logo13.jpg">
+      <img src="/img/Logo/logo14.jpg">
+      <img src="/img/Logo/logo15.png">
+      <img src="/img/Logo/logo16.jpg">
+      <img src="/img/Logo/logo17.jpg">
+      <img src="/img/Logo/logo18.jpg">
+      <img src="/img/Logo/logo19.jpg">
+      <img src="/img/Logo/logo20.jpg">
+      <img src="/img/Logo/logo21.jpg">
+
+
+    </div>
+    <div class="logo_items">
+      <img src="/img/Logo/logo22.jpg">
+      <img src="/img/Logo/logo23.jpg">
+      <img src="/img/Logo/logo24.jpg">
+      <img src="/img/Logo/logo25.jpg">
+      <img src="/img/Logo/logo26.jpg">
+      <img src="/img/Logo/logo27.jpg">
+      <img src="/img/Logo/logo28.jpg">
+      <img src="/img/Logo/logo29.jpg">
+      <img src="/img/Logo/logo30.jpg">
+      <img src="/img/Logo/logo31.jpg">
+      <img src="/img/Logo/logo32.jpg">
+      <img src="/img/Logo/logo33.jpg">
+      <img src="/img/Logo/logo34.jpg">
+      <img src="/img/Logo/logo35.jpg">
+      <img src="/img/Logo/logo36.jpg">
+      <img src="/img/Logo/logo37.jpg">
+      <img src="/img/Logo/logo38.jpg">
+      <img src="/img/Logo/logo39.jpg">
+      <img src="/img/Logo/logo40.jpg">
+      <img src="/img/Logo/logo41.jpg">
+      <img src="/img/Logo/logo42.jpg">
+      <img src="/img/Logo/logo43.jpg">
+      <img src="/img/Logo/logo44.jpg">
+    </div>
+    <!--Row 2-->
+
+  </div>
+</body>
+
+</html>

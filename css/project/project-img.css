@@ -1,0 +1,111 @@
+/* ===== WRAPPER ===== */
+.gx-gallery-wrapper{
+width:100%;
+padding:40px;
+box-sizing:border-box;
+}
+
+/* ===== GRID ===== */
+.gx-gallery-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+/* ===== CARD ===== */
+.gx-gallery-card{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+cursor:pointer;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* ===== IMAGE ===== */
+.gx-gallery-img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+transition:transform .4s ease;
+}
+
+.gx-gallery-card:hover .gx-gallery-img{
+transform:scale(1.08);
+}
+
+/* ===== OVERLAY ===== */
+.gx-overlay{
+position:absolute;
+bottom:-100%;
+left:0;
+width:100%;
+height:50%;
+background:linear-gradient(transparent,rgba(0,0,0,8));
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:20px;
+transition:bottom .4s ease;
+}
+
+.gx-gallery-card:hover .gx-overlay{
+bottom:0;
+}
+
+.gx-company-name{
+font-size:18px;
+font-weight:800;
+}
+
+.gx-company-details{
+font-size:14px;
+opacity:.9;
+}
+
+/* ===== POPUP MODAL ===== */
+.gx-popup-modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+animation:gxFade .3s ease;
+}
+
+.gx-popup-img{
+max-width:90%;
+max-height:90%;
+border-radius:8px;
+}
+
+@keyframes gxFade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1000px){
+.gx-gallery-grid{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media(max-width:768px){
+.gx-gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:480px){
+.gx-gallery-grid{
+grid-template-columns:1fr;
+}
+}

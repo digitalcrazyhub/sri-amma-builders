@@ -1,0 +1,146 @@
+/* TEAM SECTION */
+.elementer23365 {
+    background-color: #3a3a3a;
+    padding: 90px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* GRID */
+.team-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.team-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.team-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFO BOX */
+.team-info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 60px);
+    background: white;
+    width: 85%;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.team-card:hover .team-info {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+.team-card:hover .team-info {
+    bottom: 20px;
+}
+
+/* NAME */
+.team-info h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* ROLE */
+.team-info p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* PLUS ICON */
+.plus {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #a5000d, #330000);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* SOCIAL ICONS */
+.social {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.team-card:hover .social {
+    opacity: 1;
+}
+
+.social span {
+    width: 8px;
+    height: 8px;
+    background: #a5000d;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementer23365 {
+        padding: 90px 40px;
+    }
+}
